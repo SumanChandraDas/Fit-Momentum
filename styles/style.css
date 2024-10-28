@@ -40,13 +40,22 @@ body {
     color: white;
 }
 
-.selection-description {
+.section-title {
+    color: white;
+    font-size: calc(48rem / 16);
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.section-description {
     color: rgba(255, 255, 255, 0.5);
 }
 
 /* Shared style  */
 /* header style  */
-header {
+header,
+.change-habit {
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -183,6 +192,43 @@ header {
     margin: 0;
 }
 
+/* change habit section style start  */
+.change-habit .section-title,
+.section-description {
+    text-align: center;
+}
+
+.change-habit-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 54px;
+}
+
+.change-habit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-habit-card-image {
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.change-habit-card-haeding {
+    font-size: calc(18rem / 16);
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.change-habit-card .section-description {
+    text-align: center;
+}
+
 /* media Quiry  */
 /* mobile devises  */
 
@@ -214,6 +260,11 @@ header {
         bottom: 30px;
         left: -102px;
     }
+
+    .change-habit-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
 }
 
 /* medium devised  */
@@ -232,5 +283,9 @@ header {
 
     .banner {
         flex-direction: column;
+    }
+
+    .change-habit-card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
