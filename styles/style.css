@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+/* google font great vibes  */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
 /* Shared style  */
 
 .font-family-inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+}
+
+.font-family-great-vibes {
+    font-family: "Great Vibes", cursive;
 }
 
 body {
@@ -14,6 +23,26 @@ body {
     background-repeat: no-repeat;
 }
 
+.primary-color {
+    color: rgb(230, 83, 60);
+}
+
+.primary-bg {
+    background-color: rgb(230, 83, 60);
+}
+
+.primary-button {
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    border: none;
+    font-weight: 600;
+    font-size: calc(18rem / 16);
+    color: white;
+}
+
+.selection-description {
+    color: rgba(255, 255, 255, 0.5);
+}
 
 /* Shared style  */
 /* header style  */
@@ -30,7 +59,6 @@ header {
 }
 
 .brand-name {
-    color: rgb(230, 83, 60);
     font-weight: 800;
     font-size: calc(36rem / 16);
 }
@@ -53,7 +81,6 @@ header {
 
 .home-button {
     border-radius: 46px;
-    background: rgb(230, 83, 60);
     padding: 8px 20px 8px 20px;
 
 }
@@ -64,6 +91,97 @@ header {
     color: white;
 }
 
+/* banner style  */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content-container {
+    max-width: 520px;
+}
+
+.banner-heading {
+    font-size: calc(78rem / 16);
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 28px;
+    color: white;
+}
+
+.italic-bannar-haeding {
+    font-weight: 100;
+    font-size: calc(100rem / 16);
+}
+
+.banner .btn-container {
+    display: flex;
+    gap: 14px;
+}
+
+.btn-container .Download-app {
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.banner-image-container {
+    max-width: 50%;
+    position: relative;
+}
+
+.banner-image-container img {
+    position: relative;
+    width: 100%;
+}
+
+.bage-360,
+.bage-500 {
+    width: 206px;
+    background: rgba(48, 48, 48, 0.54);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 23px;
+
+}
+
+
+
+.bage-500 {
+    position: absolute;
+    top: 133px;
+    right: -72px;
+    z-index: 1;
+}
+
+.bage-360 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    bottom: 100px;
+    left: -132px;
+}
+
+.bage-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.bage-360 .bage-number {
+    color: white;
+    font-weight: 900;
+    font-size: calc(24rem / 16);
+    margin: 0;
+}
+
+.bage-500 .bage-number {
+    color: white;
+    font-weight: 900;
+    font-size: calc(40rem / 16);
+    margin: 0;
+}
 
 /* media Quiry  */
 /* mobile devises  */
@@ -79,5 +197,40 @@ header {
 
     .hambargar-icon {
         display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .bage-500 {
+        width: 145px;
+        top: 33px;
+        right: -102px;
+    }
+
+    .bage-360 {
+        width: 145px;
+        bottom: 30px;
+        left: -102px;
+    }
+}
+
+/* medium devised  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .hambargar-icon {
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column;
     }
 }
