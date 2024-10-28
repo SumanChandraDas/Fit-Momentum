@@ -53,14 +53,24 @@ body {
     font-size: (14rem / 16);
 }
 
-/* Shared style  */
-/* header style  */
 header,
 .change-habit,
-.run-extra {
+.run-extra,
+.meet-our-team {
     max-width: 1060px;
     margin: 0 auto;
+
 }
+
+.change-habit,
+.run-extra,
+.meet-our-team {
+    margin-top: 100px;
+}
+
+
+/* Shared style  */
+/* header style  */
 
 /* nav style  */
 .navbar {
@@ -257,6 +267,50 @@ header,
     border-radius: 18px;
 }
 
+
+/* Meet our team section start  */
+.meet-our-team .section-title,
+.meet-our-team .section-description {
+    text-align: center;
+}
+
+.image-galary {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.image-galary-image {
+    position: relative;
+}
+
+.image-galary-image img {
+    width: 100%;
+    border-radius: 18px;
+    height: 50vh;
+}
+
+.image-galary-image-title {
+    position: absolute;
+    font-weight: 900;
+    color: white;
+    bottom: 40px;
+    left: 20px;
+}
+
+.image-galary-image-subtitle {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: (14rem / 16);
+}
+
+
 /* media Quiry  */
 /* mobile devises  */
 
@@ -302,6 +356,10 @@ header,
         flex-direction: column;
         padding-left: 33px;
         gap: 31px;
+    }
+
+    .image-galary {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
