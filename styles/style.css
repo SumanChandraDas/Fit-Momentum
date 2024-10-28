@@ -50,12 +50,14 @@ body {
 
 .section-description {
     color: rgba(255, 255, 255, 0.5);
+    font-size: (14rem / 16);
 }
 
 /* Shared style  */
 /* header style  */
 header,
-.change-habit {
+.change-habit,
+.run-extra {
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -122,6 +124,10 @@ header,
 .italic-bannar-haeding {
     font-weight: 100;
     font-size: calc(100rem / 16);
+}
+
+.banner-content-container .section-description {
+    font-size: 1rem;
 }
 
 .banner .btn-container {
@@ -194,7 +200,7 @@ header,
 
 /* change habit section style start  */
 .change-habit .section-title,
-.section-description {
+.change-habit .section-description {
     text-align: center;
 }
 
@@ -227,6 +233,28 @@ header,
 
 .change-habit-card .section-description {
     text-align: center;
+}
+
+/* run extra section start  */
+.run-extra {
+    display: flex;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px 30px 30px 54px;
+    justify-content: space-between;
+}
+
+.run-extra-card-details {
+    max-width: 443px;
+}
+
+.run-extra-image-container {
+    width: 50%;
+}
+
+.run-extra-image-container img {
+    width: 100%;
+    border-radius: 18px;
 }
 
 /* media Quiry  */
@@ -264,6 +292,16 @@ header,
     .change-habit-card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
+    }
+
+    .run-extra-image-container {
+        width: 100%;
+    }
+
+    .run-extra {
+        flex-direction: column;
+        padding-left: 33px;
+        gap: 31px;
     }
 }
 
