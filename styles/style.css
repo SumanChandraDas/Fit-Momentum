@@ -56,7 +56,8 @@ body {
 header,
 .change-habit,
 .run-extra,
-.meet-our-team {
+.meet-our-team,
+.footer-content-container {
     max-width: 1060px;
     margin: 0 auto;
 
@@ -280,7 +281,8 @@ header,
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(34, 34, 34);
+    padding: 20px;
 }
 
 .image-galary-image {
@@ -310,6 +312,51 @@ header,
     font-size: (14rem / 16);
 }
 
+
+/* footer section style  */
+.footer {
+    margin-top: 88px;
+    background: rgb(34, 34, 34);
+    padding-top: 66px;
+}
+
+.footer-content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-items-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-items-title {
+    font-size: calc(32rem / 16);
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.footer-item {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: (23rem / 16);
+}
+
+.copyryght {
+    text-align: center;
+    padding: 35px 0 35px 0;
+}
+
+.footer small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: (20rem / 16);
+}
+
+.footer hr {
+    margin-top: 70px;
+    max-width: 1060px;
+}
 
 /* media Quiry  */
 /* mobile devises  */
@@ -358,8 +405,14 @@ header,
         gap: 31px;
     }
 
-    .image-galary {
+    .image-galary,
+    .footer-content-container,
+    .footer-items-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 20px;
     }
 }
 
@@ -383,5 +436,13 @@ header,
 
     .change-habit-card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 20px;
     }
 }
